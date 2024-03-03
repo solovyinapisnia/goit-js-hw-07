@@ -108,6 +108,7 @@ input {
   color: #2e2f42;
   border: 1px solid #808080;
   border-radius: 4px;
+  background-color: transparent;
   outline: none;
   padding: 8px 16px;
   width: 360px;
@@ -156,4 +157,54 @@ button {
 button:hover,
 button:active {
   background-color: #6c8cff;
+}
+
+/* Task 5 */
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.widget {
+  padding: 100px 88px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.widget button {
+  margin-top: 16px;
+}
+
+/* Task 6 */
+.boxes-generator {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.boxes-generator > div {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+#boxes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+button.danger {
+  min-width: 120px;
+  background-color: #ff4e4e;
+}
+
+button.danger:hover,
+button.danger:active {
+  background-color: #ff7070;
 }
