@@ -12,5 +12,5 @@ btnElement.addEventListener("click", (event) => {
 
   spanElement.textContent = newColor;
 
-  bodyElement.setAttribute("style", `background-color: ${newColor};`)
+  bodyElement.style.backgroundColor = newColor;
 })

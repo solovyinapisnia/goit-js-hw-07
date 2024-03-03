@@ -17,7 +17,9 @@ function createBoxes(amount) {
   for (let index = 0; index < amount; index++) {
     const boxElement = document.createElement("div");
 
-    boxElement.setAttribute("style", `width: ${minSize + index * 10}px; height: ${minSize + index * 10}px; background-color: ${getRandomHexColor()}`);
+    boxElement.style.width = `${minSize + index * 10}px`;
+    boxElement.style.height = `${minSize + index * 10}px`;
+    boxElement.style.backgroundColor = getRandomHexColor();
     boxesElement.append(boxElement);
   }
 }
